@@ -1,28 +1,33 @@
 @charset "UTF-8";
 
 :root {
-    --font-frase:  font-family: "Roboto Slab", serif; 
-
+    --font-frase: "Roboto Slab", serif;
     --font-nome1: "Bitter", serif;
     --font-nome2: "Lilita One", sans-serif;
-
+    --color-primary: #ff3939;
+    --color-secondary: #fd0000;
+    --transition-speed: 0.5s;
 }
 
 * {
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
 body {
     width: 100%;
     min-height: 100vh;
+    font-family: "Roboto", sans-serif;
 }
+
 /* Video de fundo */
 .website-body {
     width: 100%;
     height: 100vh;
     position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)); /* Gradiente escuro */
+    color: white; /* Texto branco para contraste */
 }
 
 .background-video {
@@ -30,27 +35,24 @@ body {
     height: 100%;
     position: fixed;
     z-index: 0;
-    background: url('/assets/img/personagem-monkey-d-luffy.png') no-repeat center center;
-    background-size: cover;
+    background-color: #000; /* Fallback se o vídeo não carregar */
 }
 
-.background-video video{
+.background-video video {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center;
+    object-position: center;  
 }
-/*Fim do Video de fundo */
 
-/* Cabeçalho da pagina */ 
+/* Cabeçalho da página */
 header {
     display: flex;
-    flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
-    padding-top: 5px;
-    margin: 0px auto; 
-    width: 700px;
+    padding-top: 10px;
+    margin: 0 auto;
+    max-width: 700px;
     position: relative;
     z-index: 1;
 }
@@ -67,57 +69,75 @@ header nav ul {
 nav ul li {
     list-style: none;
     padding: 20px;
-    font-size: 25px;
+    font-size: 1.5rem;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: black;
+    color: white;
     font-family: "Roboto", sans-serif;
+    transition: color var(--transition-speed), border-bottom var(--transition-speed);
 }
 
 nav ul li a:hover {
-    color: #808080;
+    color: black;
     border-bottom: 1px solid black;
-    transition: all 0.5s;
 }
-/* Fim do Cabeçalho da pagina */ 
 
-/* Começo do main */
-
+/* Main Section */
 main {
     width: 100%;
     height: 100%;
     position: relative;
     z-index: 1;
+    display: flex;
+    justify-content: center;
 }
 
 section {
     display: flex;
-    flex-flow: row nowrap;
+    flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
 }
 
+/* Estilos dos textos */
 article .text-sonho {
-    width: 500px;
-    position: relative;
-    left: 100px;
-
-    padding: 10px;
+    max-width: 500px;
+    margin-left: 100px;
     font-family: var(--font-nome1);
-    font-weight: 900;
-    line-height: 90px;
-    font-size: 80px;
+    font-weight: 700;
+    line-height: 1.1;
+    font-size: 4.5rem;
     text-align: center;
-   opacity: 0.7;
+    opacity: 0.7;
 }
 
 .estilo-text-sonho {
-    font-size: 100px;
+    font-size: 6rem;
+    font-weight: 900;
 }
 
+article .nome, .nome-luffy {
+    max-width: 400px;
+    margin-left: 150px;
+    font-family: var(--font-nome1);
+    font-size: 5rem;
+    font-weight: 200;
+    line-height: 0.6em;
+    padding-top: 20px;
+    color: var(--color-primary);
+}
+
+.nome-luffy {
+    font-family: var(--font-nome2);
+    padding: 50px 0 100px;
+    font-size: 11rem;
+    color: var(--color-secondary);
+}
+
+/* Footer */
 footer {
     position: relative;
-    z-index: 1;
+    z-index: 1
 }
