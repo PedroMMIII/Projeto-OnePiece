@@ -26,8 +26,9 @@ body {
     width: 100%;
     height: 100vh;
     position: relative;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)); /* Gradiente escuro */
+    background: linear-gradient(to right, black); /* Gradiente escuro */
     color: white; /* Texto branco para contraste */
+    z-index: 2;
 }
 
 .background-video {
@@ -101,6 +102,14 @@ section {
     align-items: flex-start;
 }
 
+article {
+    width: 75vw;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
 /* Estilos dos textos */
 article .text-sonho {
     max-width: 500px;
@@ -131,9 +140,17 @@ article .nome, .nome-luffy {
 
 .nome-luffy {
     font-family: var(--font-nome2);
-    padding: 50px 0 100px;
+    padding: 50px 0 60px;
     font-size: 11rem;
     color: var(--color-secondary);
+}
+
+.info {
+    width: 400px;
+    margin-left: 10%;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: justify;
 }
 
 /* Footer */
