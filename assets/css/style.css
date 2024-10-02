@@ -19,6 +19,7 @@ body {
     width: 100%;
     min-height: 100vh;
     font-family: "Roboto", sans-serif;
+    overflow-y: hidden;
 }
 
 /* Video de fundo */
@@ -49,7 +50,6 @@ body {
 /* Cabeçalho da página */
 header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     padding-top: 10px;
     margin: 0 auto;
@@ -91,15 +91,6 @@ main {
     height: 100%;
     position: relative;
     z-index: 1;
-    display: flex;
-    justify-content: center;
-}
-
-section {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
 }
 
 article {
@@ -155,6 +146,40 @@ article .nome, .nome-luffy {
 
 /* Footer */
 footer {
+    height: 0px;
+    background-color: #000;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     position: relative;
     z-index: 1
+}
+
+footer ul li {
+    list-style: none;
+}
+
+footer .botoes {
+   position: relative;
+   bottom: 580px;
+   margin-right: 40px; 
+}
+
+button img {
+    display: flex;
+    border-radius: 50%;
+    align-items: center;
+}
+
+.botao {
+    background: none;
+    border: none;
+    margin: 10px 0px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.botao:hover {
+    transition: 0.7s ease;
+    transform: translateY(-20%)
 }
