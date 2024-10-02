@@ -143,6 +143,7 @@ article .nome, .nome-luffy {
     line-height: 30px;
     text-align: justify;
 }
+/* Fim Estilos dos textos */
 
 /* Footer */
 footer {
@@ -183,3 +184,4 @@ button img {
     transition: 0.7s ease;
     transform: translateY(-20%)
 }
+/* Fim Footer */
