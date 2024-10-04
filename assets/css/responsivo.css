@@ -1,0 +1,54 @@
+@media screen and (min-width: 330px) and (max-width: 650px) {
+
+    /*---Header e Nav--- */
+    header {
+        display: flex;
+        flex-flow: column nowrap;
+        text-align: center;
+    }
+    
+    .logo {
+    width: 200px;
+   }
+
+   nav ul li {
+    padding: 15px;
+    font-size: 1.3em;
+   }
+   /*---Fim do Header e Nav--- */
+
+   /*---Article Textos--- */
+   article .text-sonho{
+    max-width: 500px;
+    font-size: 3rem;
+    margin-left: 70px;
+    margin-top: 30px;
+   }
+
+   .estilo-text-sonho {
+    font-size: 4rem;
+}
+
+article .nome, .nome-luffy {
+    margin-left: 70px;
+    font-size: 3.6rem;
+}
+
+article .nome-luffy {
+    padding: 30px 0 50px;
+    font-size: 8rem;
+}
+
+article .info {
+    width: 300px;
+    margin-left: 20%;
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: 500;
+}
+
+footer {
+    display: none;
+}
+
+}

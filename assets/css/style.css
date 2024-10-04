@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+@import "responsivo.css";
+
 :root {
     --font-frase: "Roboto Slab", serif;
     --font-nome1: "Bitter", serif;
