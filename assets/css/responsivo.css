@@ -1,54 +1,86 @@
-@media screen and (min-width: 330px) and (max-width: 650px) {
-
+@media screen and (max-width: 650px) {
     /*---Header e Nav--- */
     header {
         display: flex;
-        flex-flow: column nowrap;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .logo {
+        width: 200px;
+    }
+
+    nav ul li {
+        padding: 10px;
+        font-size: 1.3rem;
+    }
+
+    /*---Main Section (simplificar texto)--- */
+    article .text-sonho {
+        max-width: 100%;
+        font-size: 3rem;
+        margin: 20px 0px 0px 70px;
         text-align: center;
     }
-    
-    .logo {
-    width: 200px;
-   }
 
-   nav ul li {
-    padding: 15px;
-    font-size: 1.3em;
-   }
-   /*---Fim do Header e Nav--- */
+    .estilo-text-sonho {
+        font-size: 4rem;
+    }
 
-   /*---Article Textos--- */
-   article .text-sonho{
-    max-width: 500px;
-    font-size: 3rem;
-    margin-left: 70px;
-    margin-top: 30px;
-   }
+    article .nome, .nome-luffy {
+        margin-left: 70px;
+        font-size: 3rem;
+        text-align: center;
+    }
 
-   .estilo-text-sonho {
-    font-size: 4rem;
-}
+    article .nome-luffy {
+        font-size: 6rem;
+        padding: 20px 0 30px;
+    }
 
-article .nome, .nome-luffy {
-    margin-left: 70px;
-    font-size: 3.6rem;
-}
+    article .info {
+        width: 300px;
+        margin-left: 20%;
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 500;
+    }
 
-article .nome-luffy {
-    padding: 30px 0 50px;
-    font-size: 8rem;
-}
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        background-color: black;
+        width: 100%;
+        position: relative;
+        top: 240px;
+        margin-top: 40px; /* Espaço extra entre o conteúdo e o footer */
+    }
 
-article .info {
-    width: 300px;
-    margin-left: 20%;
-    font-size: 17px;
-    line-height: 20px;
-    font-weight: 500;
-}
+    .botoes {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        margin: 0;
+    }
 
-footer {
-    display: none;
-}
+    .botao img {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+    }
+
+    .botao {
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    .botao:hover {
+        transform: scale(1.1);
+        transition: transform 0.3s ease-in-out;
+    }
 
 }
