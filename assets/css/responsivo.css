@@ -76,7 +76,7 @@
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 20px;
-        margin: 20px 0 0 30px; /* Adiciona espaçamento acima e abaixo dos botões */
+        margin: 20px 0 0 35px; /* Adiciona espaçamento acima e abaixo dos botões */
         width: 100%;
         justify-content: center;
     }
@@ -92,7 +92,7 @@
         border: none;
         cursor: pointer;
         position: relative;
-        top: 350px;
+        top: 360px;
     }
 
     .botao:hover {
