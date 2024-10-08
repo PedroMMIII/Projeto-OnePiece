@@ -1,4 +1,7 @@
 @media screen and (max-width: 650px) {
+    body {
+        overflow-y: scroll;
+    }
     /*---Header e Nav--- */
     header {
         display: flex;
