@@ -1,4 +1,4 @@
-@media screen and (max-width: 650px) { 
+@media screen and (min-width: 320px) and (max-width: 601px) { 
     body {
         display: flex;
         flex-direction: column;
@@ -32,13 +32,13 @@
     /*---Main Section (simplificar texto)--- */
     article .text-sonho {
         max-width: 100%;
-        font-size: 3rem;
+        font-size: 2rem;
         margin: 20px 0px 0px 70px;
         text-align: center;
     }
 
     .estilo-text-sonho {
-        font-size: 4rem;
+        font-size: 3rem;
     }
 
     article .nome, .nome-luffy {
@@ -98,5 +98,41 @@
     .botao:hover {
         transform: scale(1.1);
         transition: transform 0.3s ease-in-out;
+    }
+}
+
+@media screen and (min-width: 602px) and (max-width: 769px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        margin: 0;
+        overflow-y: scroll;
+    }
+
+    /*---Header e Nav--- */
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    header nav ul li {
+        font-size: 1.3rem;
+    }
+    /*Fim Header */
+
+    /*---Main Section (simplificar texto)--- */
+    article .text-sonho{
+        font-size: 3rem;
+    }
+
+    .estilo-text-sonho  {
+        font-size: 4rem;
+    }
+
+    article .nome, .nome-luffy {
+        font-size: 3.6rem;
     }
 }
