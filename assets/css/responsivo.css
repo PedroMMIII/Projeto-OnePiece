@@ -1,4 +1,5 @@
-@media screen and (min-width: 320px) and (max-width: 601px) { 
+/* Media query  mobile devices */
+@media screen and (min-width: 320px) {
     body {
         display: flex;
         flex-direction: column;
@@ -21,40 +22,39 @@
     }
 
     .logo {
-        width: 200px;
+        width: 150px;
     }
 
     nav ul li {
         padding: 10px;
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 
     /*---Main Section (simplificar texto)--- */
     article .text-sonho {
-        max-width: 100%;
         font-size: 2rem;
         margin: 20px 0px 0px 70px;
         text-align: center;
     }
 
     .estilo-text-sonho {
-        font-size: 3rem;
+        font-size: 2.8rem;
     }
 
     article .nome, .nome-luffy {
         margin-left: 70px;
-        font-size: 2.7rem;
+        font-size: 2.2rem;
         text-align: center;
     }
 
     article .nome-luffy {
-        font-size: 4rem;
+        font-size: 3rem;
         padding: 20px 0 30px;
     }
 
     article .info {
-        width: 300px;
-        margin-left: 20%;
+        width: 290px;
+        margin-left: 8%;
         font-size: 16px;
         line-height: 20px;
         font-weight: 500;
@@ -65,25 +65,24 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 10px;
         background-color: black;
         width: 100%;
-        margin-top: 40px;
         position: relative;
+        margin-top: 40px;
     }
 
     .botoes {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        gap: 20px;
+        gap: 10px;
         margin: 20px 0 0 35px; /* Adiciona espaçamento acima e abaixo dos botões */
         width: 100%;
         justify-content: center;
     }
 
     .botao img {
-        width: 70px;
-        height: 70px;
+        width: 60px;
+        height: 60px;
         border-radius: 50%;
     }
 
@@ -92,7 +91,7 @@
         border: none;
         cursor: pointer;
         position: relative;
-        top: 360px;
+        top: 250px;
     }
 
     .botao:hover {
@@ -101,38 +100,124 @@
     }
 }
 
-@media screen and (min-width: 602px) and (max-width: 769px) {
-    body {
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
-        margin: 0;
-        overflow-y: scroll;
+@media screen and (min-width: 360px){
+    article .nome, .nome-luffy {
+        margin-left: 80px;
     }
 
-    /*---Header e Nav--- */
-    header {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 10px;
+}
+
+@media screen and (min-width: 380px){
+    article .nome, .nome-luffy {
+        margin-left: 90px;
     }
 
-    header nav ul li {
-        font-size: 1.3rem;
+    article .info {
+        margin-left: 14%;
     }
-    /*Fim Header */
 
-    /*---Main Section (simplificar texto)--- */
-    article .text-sonho{
+}
+
+@media screen and (min-width: 420px){
+    article .nome, .nome-luffy {
+        margin-left: 100px;
+    }
+
+}
+
+@media screen and (min-width: 425px) {
+
+    article .text-sonho {
+        font-size: 2.2rem;
+    }
+
+    .estilo-text-sonho {
         font-size: 3rem;
     }
 
-    .estilo-text-sonho  {
+    article .nome, .nome-luffy {
+        margin-left: 100px;
+        font-size: 2.5rem;
+    }  
+
+    article .nome-luffy {
         font-size: 4rem;
+    }
+}
+
+@media screen and (min-width: 440px) {
+    
+    article .text-sonho {
+        font-size: 2.6rem;
+        
+    }
+
+    .estilo-text-sonho {
+        font-size: 3.3rem;
     }
 
     article .nome, .nome-luffy {
-        font-size: 3.6rem;
+        font-size: 2.8rem;
+        margin-left: 90px;
     }
+
+    article .nome-luffy {
+        font-size: 4rem;
+    }
+
+    .botao {
+        top: 220px;
+    }
+}
+
+@media screen and (min-width: 457px) {
+    header nav ul li {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (min-width: 460px) {
+    
+    article .info {
+            width: 320px;
+            margin-left: 15%;
+            font-size: 18px;
+            line-height: 20px;
+            font-weight: 500;
+        }
+
+    .botao {
+        top: 190px;
+    }
+}
+
+
+@media screen and (min-width: 480px) {
+    
+    .logo {
+        width: 200px;
+    }
+
+    nav ul li {
+        font-size: 1.2rem;
+    }
+
+    article .text-sonho {
+        font-size: 3rem;
+        
+    }
+
+    .estilo-text-sonho {
+        font-size: 3.8rem;
+    }
+
+    article .nome, .nome-luffy {
+        font-size: 3.5rem;
+    }
+
+    
+    article .nome-luffy {
+        font-size: 4.6rem;
+    }
+    
 }
