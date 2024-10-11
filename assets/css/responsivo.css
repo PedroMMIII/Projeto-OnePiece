@@ -26,7 +26,7 @@
 
     nav ul li {
         padding: 10px;
-        font-size: 1.3rem;
+        font-size: 1.1rem;
     }
 
     /*---Main Section (simplificar texto)--- */
@@ -43,12 +43,12 @@
 
     article .nome, .nome-luffy {
         margin-left: 70px;
-        font-size: 3rem;
+        font-size: 2.7rem;
         text-align: center;
     }
 
     article .nome-luffy {
-        font-size: 6rem;
+        font-size: 4rem;
         padding: 20px 0 30px;
     }
 
