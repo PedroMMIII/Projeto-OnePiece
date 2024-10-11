@@ -102,14 +102,14 @@
 
 @media screen and (min-width: 360px){
     article .nome, .nome-luffy {
-        margin-left: 80px;
+        margin-left: 85px;
     }
 
 }
 
 @media screen and (min-width: 380px){
     article .nome, .nome-luffy {
-        margin-left: 90px;
+        margin-left: 95px;
     }
 
     article .info {
@@ -120,7 +120,7 @@
 
 @media screen and (min-width: 420px){
     article .nome, .nome-luffy {
-        margin-left: 100px;
+        margin-left: 105px;
     }
 
 }
@@ -136,7 +136,6 @@
     }
 
     article .nome, .nome-luffy {
-        margin-left: 100px;
         font-size: 2.5rem;
     }  
 
