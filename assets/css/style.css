@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@import "responsivo-mobile.css";
+@import "responsivo.css";
 
 :root {
     --font-frase: "Roboto Slab", serif;
