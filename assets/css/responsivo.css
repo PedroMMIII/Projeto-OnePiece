@@ -1,16 +1,20 @@
-/* Media query  mobile devices */
-@media screen and (min-width: 320px) {
+/* Media query mobile devices */
+@media screen and (min-width: 320px) and (max-width: 480px) {
     body {
         display: flex;
         flex-direction: column;
         min-height: 100vh;
         margin: 0;
         overflow-y: scroll;
+        align-items: center; /* Centraliza o conteúdo no eixo horizontal */
     }
 
     main {
         flex: 1;
-        padding-bottom: 50px; /* Garante que o conteúdo tenha espaço suficiente antes do footer */
+        padding-bottom: 50px;
+        width: 90%; /* Certifica que o main ocupe a largura total */
+        display: flex;
+        justify-content: center; /* Centraliza o conteúdo dentro do main */
     }
 
     /*---Header e Nav--- */
@@ -19,6 +23,8 @@
         flex-direction: column;
         align-items: center;
         padding: 10px;
+        width: 100%; /* Certifica que o header ocupe a largura total */
+        text-align: center; /* Centraliza o texto dentro do header */
     }
 
     .logo {
@@ -27,37 +33,42 @@
 
     nav ul li {
         padding: 10px;
-        font-size: 1rem;
+        font-size: 1.1rem;
+       text-align: center; /* Centraliza o texto dentro dos itens de nav */
+        margin-bottom: 20px;
     }
 
-    /*---Main Section (simplificar texto)--- */
+    /*---Main Section--- */
     article .text-sonho {
         font-size: 2rem;
-        margin: 20px 0px 0px 70px;
-        text-align: center;
+        margin: auto; /* Centraliza horizontalmente */
+        text-align: center; /* Centraliza o texto */
     }
 
     .estilo-text-sonho {
         font-size: 2.8rem;
+        text-align: center; /* Centraliza o texto */
     }
 
     article .nome, .nome-luffy {
-        margin-left: 70px;
-        font-size: 2.2rem;
+        font-size: 3rem;
+        margin: 0 auto; /* Centraliza horizontalmente */
         text-align: center;
     }
 
     article .nome-luffy {
-        font-size: 3rem;
+        font-size: 4rem;
         padding: 20px 0 30px;
+        text-align: center;
     }
 
     article .info {
         width: 290px;
-        margin-left: 8%;
+        margin: 0 auto; /* Centraliza horizontalmente */
         font-size: 16px;
         line-height: 20px;
         font-weight: 500;
+        text-align: justify;
     }
 
     /*--- Footer e Botões ---*/
@@ -74,10 +85,9 @@
     .botoes {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        gap: 10px;
-        margin: 20px 0 0 35px; /* Adiciona espaçamento acima e abaixo dos botões */
-        width: 100%;
-        justify-content: center;
+        gap: 5px;
+        margin: 20px auto; /* Centraliza horizontalmente */
+        width: 80%;
     }
 
     .botao img {
@@ -97,126 +107,96 @@
     .botao:hover {
         transform: scale(1.1);
         transition: transform 0.3s ease-in-out;
-    }
+    } 
 }
 
-@media screen and (min-width: 360px){
-    article .nome, .nome-luffy {
-        margin-left: 85px;
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        margin: 0;
+        overflow-y: scroll;
+        align-items: center; /* Centraliza o conteúdo no eixo horizontal */
     }
 
-}
-
-@media screen and (min-width: 380px){
-    article .nome, .nome-luffy {
-        margin-left: 95px;
+    main {
+        flex: 1;
+        padding-bottom: 50px;
+        width: 90%; /* Certifica que o main ocupe a largura total */
+        display: flex;
+        justify-content: center; /* Centraliza o conteúdo dentro do main */
     }
 
-    article .info {
-        margin-left: 14%;
+    /*---Header e Nav--- */
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        width: 100%; /* Certifica que o header ocupe a largura total */
+        text-align: center; /* Centraliza o texto dentro do header */
     }
 
-}
-
-@media screen and (min-width: 420px){
-    article .nome, .nome-luffy {
-        margin-left: 105px;
-    }
-
-}
-
-@media screen and (min-width: 425px) {
-
-    article .text-sonho {
-        font-size: 2.2rem;
-    }
-
-    .estilo-text-sonho {
-        font-size: 3rem;
-    }
-
-    article .nome, .nome-luffy {
-        font-size: 2.5rem;
-    }  
-
-    article .nome-luffy {
-        font-size: 4rem;
-    }
-}
-
-@media screen and (min-width: 440px) {
-    
-    article .text-sonho {
-        font-size: 2.6rem;
-        
-    }
-
-    .estilo-text-sonho {
-        font-size: 3.3rem;
-    }
-
-    article .nome, .nome-luffy {
-        font-size: 2.8rem;
-        margin-left: 90px;
-    }
-
-    article .nome-luffy {
-        font-size: 4rem;
-    }
-
-    .botao {
-        top: 220px;
-    }
-}
-
-@media screen and (min-width: 457px) {
-    header nav ul li {
-        font-size: 1.2rem;
-    }
-}
-
-@media screen and (min-width: 460px) {
-    
-    article .info {
-            width: 320px;
-            margin-left: 15%;
-            font-size: 18px;
-            line-height: 20px;
-            font-weight: 500;
-        }
-
-    .botao {
-        top: 190px;
-    }
-}
-
-
-@media screen and (min-width: 480px) {
-    
     .logo {
         width: 200px;
     }
 
     nav ul li {
-        font-size: 1.2rem;
+        padding: 10px;
+        font-size: 1.3rem;
+       text-align: center; /* Centraliza o texto dentro dos itens de nav */
+        margin-bottom: 20px;
     }
 
+    /*---Main Section--- */
     article .text-sonho {
-        font-size: 3rem;
-        
+        font-size: 3.1rem;
+        margin: auto; /* Centraliza horizontalmente */
+        text-align: center; /* Centraliza o texto */
     }
 
     .estilo-text-sonho {
-        font-size: 3.8rem;
+        font-size: 3.7rem;
+        text-align: center; /* Centraliza o texto */
     }
 
     article .nome, .nome-luffy {
-        font-size: 3.5rem;
+        font-size: 4rem;
+        margin: 0 auto; /* Centraliza horizontalmente */
+        text-align: center;
     }
 
-    
     article .nome-luffy {
-        font-size: 4.6rem;
+        font-size: 5rem;
+        padding: 20px 0 30px;
+        text-align: center;
     }
-    
+
+    article .info {
+        width: 400px;
+        margin: 20px auto; /* Centraliza horizontalmente */
+        font-size: 18px;
+        line-height: 20px;
+        font-weight: 500;
+        text-align: justify;
+    }
+
+    /*--- Footer e Botões ---*/
+
+    button img {
+        width: 70px;
+        height: 70px;
+    }
+
+    footer .botoes {
+        position: relative;
+        bottom: 600px;
+        margin-right: 40px; 
+     }
+
+    .botao:hover {
+        transform: scale(1.1);
+        transition: transform 0.3s ease-in-out;
+    } 
 }
