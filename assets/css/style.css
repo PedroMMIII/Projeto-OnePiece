@@ -19,7 +19,7 @@ body {
     width: 100%;
     min-height: 100vh;
     font-family: "Roboto", sans-serif;
-    overflow-y: hidden;
+    overflow-y: auto;
 }
 
 /* Video de fundo */
@@ -27,7 +27,6 @@ body {
     width: 100%;
     height: 100vh;
     position: relative;
-    background: linear-gradient(to right, black); /* Gradiente escuro */
     color: white; /* Texto branco para contraste */
     z-index: 2;
 }
@@ -60,6 +59,7 @@ header {
 
 .logo {
     width: 200px;
+    margin-right: 10px;
 }
 
 header nav ul {
@@ -87,8 +87,6 @@ nav ul li a:hover {
 
 /* Main Section */
 main {
-    width: 100%;
-    height: 100%;
     position: relative;
     z-index: 1;
 }
@@ -118,7 +116,7 @@ article .text-sonho {
     font-weight: 900;
 }
 
-article .nome, .nome-luffy {
+article .segundo-nome-personagem, .primeiro-nome-personagem {
     max-width: 400px;
     margin-left: 150px;
     font-family: var(--font-nome1);
@@ -129,7 +127,7 @@ article .nome, .nome-luffy {
     color: var(--color-primary);
 }
 
-.nome-luffy {
+.primeiro-nome-personagem  {
     font-family: var(--font-nome2);
     padding: 50px 0 60px;
     font-size: 11rem;
@@ -143,33 +141,47 @@ article .nome, .nome-luffy {
     line-height: 30px;
     text-align: justify;
 }
+
+/* Adicionar sombra ao texto */
+.text-sonho,
+.segundo-nome-personagem,
+.primeiro-nome-personagem,
+.info, nav ul li a {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.63); /* Sombra preta levemente transparente */
+}
+
 /* Fim Estilos dos textos */
 
 /* Footer */
 footer {
-    height: 0px;
-    background-color: #000;
+    max-height: 100px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     position: relative;
-    z-index: 1
+    z-index: 1;
 }
+
 
 footer ul li {
     list-style: none;
 }
 
 footer .botoes {
-   position: relative;
-   bottom: 580px;
-   margin-right: 40px; 
+    position: relative;
+    top: 100%;
+    left: 0%;
+    transform: translate(-25%, -55%);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
 }
 
 button img {
-    display: flex;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
-    align-items: center;
 }
 
 .botao {
@@ -181,7 +193,9 @@ button img {
 }
 
 .botao:hover {
-    transition: 0.7s ease;
-    transform: translateY(-20%)
+    transition: 0.5s ease-in-out;
+    transform: translateY(-10%);
+    filter: brightness(1.2);
 }
+
 /* Fim Footer */

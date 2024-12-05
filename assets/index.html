@@ -14,14 +14,26 @@
     <link rel="stylesheet" href="css/responsivo.css">
 </head>
 <body>
+    <!-- Video de fundo -->
     <div class="website-body">
         <div class="background-video">
-            <video src="video-e-audio/luffy-background.webm" autoplay loop muted></video>
+            <video autoplay loop muted>
+                <source src="video-e-audio/luffy-background.webm" type="video/webm">
+                <source src="video-e-audio/luffy-background.mp4" type="video/mp4">
+                Seu navegador não suporta vídeo em HTML5.
+                <div class="video-overlay"></div> Overlay de cor
+            </video>
+            
         </div>
+        <!-- Fim Video de fundo -->
         
         <!-- Header -->
         <header>
+            <!-- Logo One piece -->
             <img src="img/one-piece-logo.png" class="logo" alt="Logo One Piece">
+            <!-- End Logo One piece -->
+
+            <!-- Menu de navegação -->
             <nav>
                 <ul>
                     <li><a href="#">Home</a></li>
@@ -30,19 +42,24 @@
                     <li><a href="#">Personagens</a></li>
                 </ul>
             </nav>
+            <!-- End Menu de navegação -->
         </header>
         <!-- End Header -->
         
         <!-- Main -->
         <main>
+            <!-- Organização na tela das informações -->
             <section>
+                <!-- Informações personagem -->
                 <article>
                     <h2 class="text-sonho">EU SEREI O <span class="estilo-text-sonho">REI DOS PIRATAS</span></h2>
-                    <p class="nome">Monkey D.</p>
-                    <p class="nome-luffy">Luffy</p>
+                    <p class="segundo-nome-personagem">Monkey D.</p>
+                    <p class="primeiro-nome-personagem">Luffy</p>
                     <p class="info">Luffy nasceu na Vila Foosha, parte do Reino Goa e local no qual a história começa. Ele é filho do revolucionário Monkey D. Dragon e neto do Vice-Almirante Monkey D. Garp, fazendo parte da Família dos D. seus membros são considerados Inimigos Naturais de Deus, mas o real motivo por inicial é um mistério para todos.</p>
                 </article>
+                 <!-- Endd informações personagem -->
             </section>
+            <!-- End Organização na tela das informações -->
         </main>
         <!-- End Main -->
 
